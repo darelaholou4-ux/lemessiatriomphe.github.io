@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Le Messia Triomphe</title>
+  <link rel="stylesheet" href="cave-à-vin.css">
+</head>
+<div class="rectification"></div>
+<body class="page-commander">
+
+ <header>   
+   <p class="message">Des vins d'exception pour les moments qui comptent.
+</p>
+   <div class="head">
+     <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+      <path d="M22 10h16v8c0 0 5 4 5 14v24a4 4 0 0 1-4 4H21a4 4 0 0 1-4-4V32c0-10 5-14 5-14V10z" fill="#2a1810" stroke="#c9a96e" stroke-width="1.2"/>
+      <rect x="24" y="5" width="12" height="7" rx="2" fill="#c9a96e" opacity="0.5"/>
+      <path d="M6 28 L7 31 L10 31 L7.5 33 L8.5 36 L6 34 L3.5 36 L4.5 33 L2 31 L5 31 Z" fill="#c9a96e" opacity="0.6"/>
+      <path d="M54 28 L55 31 L58 31 L55.5 33 L56.5 36 L54 34 L51.5 36 L52.5 33 L50 31 L53 31 Z" fill="#c9a96e" opacity="0.6"/>
+    </svg>
+ 
+    <!-- Texte -->
+    <div class="head-text">
+      <span class="head-nom">LE MESSIA TRIOMPHE</span>
+      <span class="head-slogan">Vins d'Exception</span>
+   
+
+   </div>
+
+   <nav>
+  <ul>
+    <li>
+      <a href="cave-à-vin.html">
+        <!-- Icône maison SVG -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12L12 3L21 12" stroke="#c9a96e" stroke-width="2" stroke-linecap="round"/>
+          <path d="M5 10V20H10V15H14V20H19V10" stroke="#c9a96e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </li>
+    <li><a href="vins.html">Nos Vins</a></li>
+    <li><a href="commander.html">Commander</a></li>
+    <li><a href="à-propos.html">À Propos</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+
+  <main class="contact-main">
+
+    <h2 class="contact-titre">📬 Contactez-Nous</h2>
+    <div class="contact-ligne"></div>
+    <p class="contact-intro">Nous sommes à votre écoute pour toute question, commande ou suggestion.</p>
+
+    <div class="contact-container">
+
+      <div class="contact-infos">
+
+        <h3 class="contact-infos-titre">CONTACT</h3>
+        <p class="contact-infos-desc">
+          La Cave Le Messia Triomphe est votre destination privilégiée pour des vins d'exception
+          au Bénin. Notre équipe passionnée est disponible pour vous conseiller et traiter
+          vos commandes avec soin. N'hésitez pas à nous joindre !
+        </p>
+
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <p>+229 43 01 32 56</p>
+            <p>+229 97 64 38 01</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <p>lemessiatriomphe@gmail.com</p>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <p>Cotonou, Bénin — Quartier Cococodji,<br>
+          dans la von après le CEG Méridien.</p>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <p>Disponible 7j/7 — de 8h à 20h</p>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.0!2d2.3158!3d6.3654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCococodji%2C+Cotonou%2C+B%C3%A9nin!5e0!3m2!1sfr!2sfr!4v1"
+            width="100%"
+            height="200"
+            style="border:0; border-radius:8px;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+
+      <div class="contact-form-wrapper">
+        <h3 class="contact-form-titre">Laissez-nous un message</h3>
+
+       <form action="https://formspree.io/f/mvzwgzgy" method="POST" class="contact-form">
+
+          <div class="contact-form-grid">
+            <div class="contact-field">
+              <label for="c-nom">Nom</label>
+              <input type="text" id="c-nom" name="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="contact-field">
+              <label for="c-prenom">Prénom</label>
+              <input type="text" id="c-prenom" name="prenom" placeholder="Votre prénom" required>
+            </div>
+            <div class="contact-field">
+              <label for="c-email">Email</label>
+              <input type="email" id="c-email" name="email" placeholder="votre@email.com" required>
+            </div>
+            <div class="contact-field">
+              <label for="c-objet">Objet</label>
+              <input type="text" id="c-objet" name="objet" placeholder="Objet de votre message">
+            </div>
+          </div>
+
+          <div class="contact-field full">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" rows="6" placeholder="Écrivez votre message ici..." required></textarea>
+          </div>
+
+          <div class="contact-submit">
+            <button type="submit">Envoyer ✉️</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+
+    <div class="contact-bonus">
+      <div class="bonus-card">
+        <span>🍷</span>
+        <h4>Dégustation</h4>
+        <p>Sur rendez-vous, venez déguster nos vins directement à notre cave.</p>
+      </div>
+      <div class="bonus-card">
+        <span>🚚</span>
+        <h4>Livraison</h4>
+        <p>Nous livrons partout à Cotonou et dans les environs sous 24 à 48h.</p>
+      </div>
+      <div class="bonus-card">
+        <span>🎁</span>
+        <h4>Coffrets Cadeaux</h4>
+        <p>Offrez un coffret de vins pour toutes les occasions spéciales.</p>
+      </div>
+      <div class="bonus-card">
+        <span>📱</span>
+        <h4>WhatsApp</h4>
+        <p>Commandez rapidement via WhatsApp au
+          <a href="https://wa.me/22997164045" target="_blank" style="color:#c9a96e;">+229 97 16 40 45</a>.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  </div>
+
+  <footer>
+    <hr class="footer-ligne">
+    <p class="footer-texte">
+      🍷 <em>Le Messia Triomphe</em> — Là où chaque bouteille devient un souvenir inoubliable.
+    </p>
+    <p class="footer-copy">© 2025 Le Messia Triomphe. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

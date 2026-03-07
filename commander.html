@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commander – Le Messia Triomphe</title>
+  <link rel="stylesheet" href="cave-à-vin.css">
+</head>
+<body>
+
+  <header>   
+   <p class="message">Des vins d'exception pour les moments qui comptent.
+</p>
+   <div class="head">
+     <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+      <path d="M22 10h16v8c0 0 5 4 5 14v24a4 4 0 0 1-4 4H21a4 4 0 0 1-4-4V32c0-10 5-14 5-14V10z" fill="#2a1810" stroke="#c9a96e" stroke-width="1.2"/>
+      <rect x="24" y="5" width="12" height="7" rx="2" fill="#c9a96e" opacity="0.5"/>
+      <path d="M6 28 L7 31 L10 31 L7.5 33 L8.5 36 L6 34 L3.5 36 L4.5 33 L2 31 L5 31 Z" fill="#c9a96e" opacity="0.6"/>
+      <path d="M54 28 L55 31 L58 31 L55.5 33 L56.5 36 L54 34 L51.5 36 L52.5 33 L50 31 L53 31 Z" fill="#c9a96e" opacity="0.6"/>
+    </svg>
+ 
+    <!-- Texte -->
+    <div class="head-text">
+      <span class="head-nom">LE MESSIA TRIOMPHE</span>
+      <span class="head-slogan">Vins d'Exception</span>
+   
+
+   </div>
+
+   <nav>
+  <ul>
+    <li>
+      <a href="cave-à-vin.html">
+        <!-- Icône maison SVG -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12L12 3L21 12" stroke="#c9a96e" stroke-width="2" stroke-linecap="round"/>
+          <path d="M5 10V20H10V15H14V20H19V10" stroke="#c9a96e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </li>
+    <li><a href="vins.html">Nos Vins</a></li>
+    <li><a href="commander.html">Commander</a></li>
+    <li><a href="à-propos.html">À Propos</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+
+  <main class="cmd-main">
+
+    <h2 class="cmd-titre">🛒 Passer une Commande</h2>
+    <div class="cmd-ligne"></div>
+    <p class="cmd-intro">Remplissez le formulaire ci-dessous et nous vous contacterons rapidement pour confirmer votre commande.</p>
+
+    <form action="https://formspree.io/f/mvzwgzgy" method="POST" class="cmd-form">
+
+      <div class="cmd-section">
+        <h3>👤 Vos Informations</h3>
+        <div class="cmd-grid">
+          <div class="cmd-field">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+          </div>
+          <div class="cmd-field">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+          </div>
+          <div class="cmd-field">
+            <label for="email">Adresse Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+          </div>
+          <div class="cmd-field">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="+229 XX XX XX XX">
+          </div>
+        </div>
+      </div>
+
+      <div class="cmd-section">
+        <h3>🍷 Sélection du Vin</h3>
+        <p class="cmd-section-intro">Indiquez la quantité souhaitée pour chaque vin.</p>
+        <div class="cmd-grid">
+          <div class="cmd-field">
+            <label for="cuvee-belle-grove">Cuvée Belle-Grove — 2 500 FCFA</label>
+            <input type="number" id="cuvee-belle-grove" name="cuvee-belle-grove" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="baron-roman">Baron Roman — 2 000 FCFA</label>
+            <input type="number" id="baron-roman" name="baron-roman" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="castillo-saint-simon">Castillo Saint Simon — 2 500 FCFA</label>
+            <input type="number" id="castillo-saint-simon" name="castillo-saint-simon" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="saint-jean">La Cuvée Saint Jean — 2 500 FCFA</label>
+            <input type="number" id="saint-jean" name="saint-jean" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="valentina">Valentina — 3 500 FCFA</label>
+            <input type="number" id="valentina" name="valentina" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="bois-royal">Bois Royal — 3 850 FCFA</label>
+            <input type="number" id="bois-royal" name="bois-royal" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="grand-versant">Grand Versant — 2 500 FCFA</label>
+            <input type="number" id="grand-versant" name="grand-versant" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="prestigium">PRESTIGIUM — 3 000 FCFA</label>
+            <input type="number" id="prestigium" name="prestigium" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="hauts-palettes">Les Bordeaux des Hauts des Palettes — 6 000 FCFA</label>
+            <input type="number" id="hauts-palettes" name="hauts-palettes" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="point-gouttes">Chateau du Point des Gouttes — 3 500 FCFA</label>
+            <input type="number" id="point-gouttes" name="point-gouttes" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="vicomte-bordeaux">Vicomte de Bordeaux — 8 000 FCFA</label>
+            <input type="number" id="vicomte-bordeaux" name="vicomte-bordeaux" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="ch-pierre">CH Pierre Bordeaux — 3 600 FCFA</label>
+            <input type="number" id="ch-pierre" name="ch-pierre" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="chateau-grangeaux">Chateau des Grangeaux — 4 000 FCFA</label>
+            <input type="number" id="chateau-grangeaux" name="chateau-grangeaux" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="grand-portail">Grand Portail — 4 200 FCFA</label>
+            <input type="number" id="grand-portail" name="grand-portail" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="grande-duchesse">Grande Duchesse Marie — 2 600 FCFA</label>
+            <input type="number" id="grande-duchesse" name="grande-duchesse" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="grangeaux">Grangeaux — 4 000 FCFA</label>
+            <input type="number" id="grangeaux" name="grangeaux" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="journee-special">Journée Spécial — 2 500 FCFA</label>
+            <input type="number" id="journee-special" name="journee-special" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="jp-chenet">JP Chenet — 5 000 FCFA</label>
+            <input type="number" id="jp-chenet" name="jp-chenet" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="monguillon">MONGUILLON — 8 000 FCFA</label>
+            <input type="number" id="monguillon" name="monguillon" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="la-baume">La Baume — 7 000 FCFA</label>
+            <input type="number" id="la-baume" name="la-baume" min="0" value="0">
+          </div>
+          <div class="cmd-field">
+            <label for="rosee-cengle">Rosée le Cengle — 6 200 FCFA</label>
+            <input type="number" id="rosee-cengle" name="rosee-cengle" min="0" value="0">
+          </div>
+        </div>
+      </div>
+
+      <div class="cmd-section">
+        <h3>📅 Date de Livraison</h3>
+        <p class="cmd-section-intro">Renseignez-nous sur quand vous souhaitez recevoir votre commande.</p>
+        <div class="cmd-grid">
+          <div class="cmd-field">
+            <label for="date-livraison">Date souhaitée</label>
+            <input type="date" id="date-livraison" name="date-livraison" required>
+          </div>
+          <div class="cmd-field">
+            <label for="urgence">Délai</label>
+            <select id="urgence" name="urgence">
+              <option value="">-- Sélectionnez --</option>
+              <option value="urgent">Urgent (24h)</option>
+              <option value="normal">Normal (2-3 jours)</option>
+              <option value="planifie">Planifié (date choisie)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="cmd-section">
+        <h3>📍 Adresse de Livraison</h3>
+        <div class="cmd-field full">
+          <label for="adresse">Adresse ou description du lieu de livraison</label>
+          <textarea id="adresse" name="adresse" rows="4" placeholder="Ex: Quartier Cadjehoun, près de la pharmacie centrale, maison bleue..." required></textarea>
+        </div>
+      </div>
+
+      <div class="cmd-section">
+        <h3>💬 Autres Précisions</h3>
+        <div class="cmd-field full">
+          <label for="autres-precision">Avez-vous des informations supplémentaires à nous communiquer ?</label>
+          <textarea id="autres-precision" name="autres-precision" rows="4" placeholder="Toute information utile pour votre commande..."></textarea>
+        </div>
+      </div>
+
+      <div class="cmd-submit">
+        <button type="submit">🍷 Envoyer ma commande</button>
+      </div>
+
+    </form>
+
+    <p class="cmd-reassurance">
+      Pour tout problème ou inquiétude, veuillez
+      <a href="contact.html">nous contacter</a> —
+      notre équipe est disponible pour vous aider.
+    </p>
+
+
+    <div class="vins-special">
+  <span class="vins-special-deco">🛒</span>
+  <h3 class="vins-special-titre">Une commande hors du commun ?</h3>
+  <p class="vins-special-texte">
+    Vous avez un événement exceptionnel à célébrer, une quantité particulière
+    ou des exigences spécifiques que notre formulaire ne couvre pas ?
+    Nous sommes là pour vous. 
+    <a href="contact.html" class="vins-special-lien">Écrivez-nous directement</a> —
+    chaque commande spéciale est traitée avec la même passion et le même soin
+    que nous mettons dans chacune de nos bouteilles.
+  </p>
+</div>
+
+  </main>
+
+  <footer>
+    <hr class="footer-ligne">
+    <p class="footer-texte">
+      🍷 <em>Le Messia Triomphe</em> — Là où chaque bouteille devient un souvenir inoubliable.
+    </p>
+    <p class="footer-copy">© 2025 Le Messia Triomphe. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

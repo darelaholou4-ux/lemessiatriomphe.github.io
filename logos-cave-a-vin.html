@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Logos – Cave à Vin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0e0a06;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 60px;
+      padding: 60px 20px;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    h1 {
+      color: #c9a96e;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      font-size: 13px;
+      text-transform: uppercase;
+      opacity: 0.6;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .label {
+      color: #c9a96e;
+      font-size: 11px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      opacity: 0.5;
+      font-family: 'Cinzel', serif;
+    }
+
+    /* ─── LOGO 1 ─── */
+    .logo1 {
+      background: linear-gradient(145deg, #1a0f0a, #2a1810);
+      border: 1px solid #3d2415;
+      border-radius: 4px;
+      padding: 48px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(201,169,110,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: default;
+    }
+    .logo1:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.7), inset 0 1px 0 rgba(201,169,110,0.15);
+    }
+
+    .logo1-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    .logo1-top-line {
+      width: 180px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #c9a96e, transparent);
+      margin-bottom: 18px;
+    }
+
+    .logo1-icon {
+      margin-bottom: 14px;
+    }
+
+    .logo1-name {
+      font-family: 'Cinzel', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #e8d5b0;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+
+    .logo1-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 13px;
+      color: #c9a96e;
+      letter-spacing: 0.35em;
+      margin-top: 6px;
+    }
+
+    .logo1-bottom-line {
+      width: 180px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #c9a96e, transparent);
+      margin-top: 18px;
+    }
+
+    /* ─── LOGO 2 ─── */
+    .logo2 {
+      background: #f5f0e8;
+      border-radius: 4px;
+      padding: 48px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: default;
+    }
+    .logo2:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+    }
+
+    .logo2-inner {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .logo2-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo2-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: #2c1810;
+      letter-spacing: 0.05em;
+      line-height: 1;
+    }
+
+    .logo2-name span {
+      color: #8b1a1a;
+    }
+
+    .logo2-divider {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, #8b1a1a, #c9a96e);
+      margin: 8px 0;
+    }
+
+    .logo2-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 11px;
+      font-weight: 300;
+      color: #6b4c3b;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+    }
+
+    .separator {
+      width: 1px;
+      height: 80px;
+      background: linear-gradient(180deg, transparent, #8b1a1a, transparent);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Logos — Cave à Vin</h1>
+
+  <!-- LOGO 1 : Élégance dorée sur fond sombre -->
+  <div class="logo-wrapper">
+    <div class="label">Version 1 — Prestige Noir & Or</div>
+    <div class="logo1">
+      <div class="logo1-inner">
+        <div class="logo1-top-line"></div>
+
+        <!-- Icône SVG : bouteille + étoiles -->
+        <svg class="logo1-icon" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Bouteille -->
+          <path d="M21 6h10v6c0 0 4 3 4 10v18a3 3 0 0 1-3 3H20a3 3 0 0 1-3-3V22c0-7 4-10 4-10V6z" fill="#2a1810" stroke="#c9a96e" stroke-width="1.2"/>
+          <!-- Col -->
+          <rect x="23" y="3" width="6" height="5" rx="1" fill="#c9a96e" opacity="0.6"/>
+          <!-- Reflet -->
+          <path d="M23 22 Q22 30 22 38" stroke="#c9a96e" stroke-width="0.8" opacity="0.4" stroke-linecap="round"/>
+          <!-- Étoile gauche -->
+          <path d="M8 18 L9.5 22 L13.5 22 L10.5 24.5 L11.5 28.5 L8 26 L4.5 28.5 L5.5 24.5 L2.5 22 L6.5 22 Z" fill="#c9a96e" opacity="0.7"/>
+          <!-- Étoile droite -->
+          <path d="M44 18 L45.5 22 L49.5 22 L46.5 24.5 L47.5 28.5 L44 26 L40.5 28.5 L41.5 24.5 L38.5 22 L42.5 22 Z" fill="#c9a96e" opacity="0.7"/>
+        </svg>
+
+        <div class="logo1-name" style="font-size:20px; letter-spacing:0.2em;">LE MESSIA TRIOMPHE</div>
+        <div class="logo1-sub">Vins d'Exception</div>
+        <div class="logo1-bottom-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGO 2 : Classique rouge & crème -->
+  <div class="logo-wrapper">
+    <div class="label" style="color:#8b1a1a; opacity:0.7;">Version 2 — Classique Rouge & Crème</div>
+    <div class="logo2">
+      <div class="logo2-inner">
+
+        <!-- Icône SVG : grappe de raisin -->
+        <svg width="64" height="74" viewBox="0 0 64 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Tige -->
+          <path d="M32 6 Q38 10 40 16" stroke="#2c1810" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M32 6 Q28 12 26 18" stroke="#2c1810" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+          <!-- Feuille -->
+          <path d="M40 16 Q46 10 44 4 Q38 8 40 16Z" fill="#6b8c5a" opacity="0.8"/>
+          <!-- Grains de raisin -->
+          <circle cx="32" cy="22" r="5.5" fill="#8b1a1a"/>
+          <circle cx="22" cy="28" r="5.5" fill="#8b1a1a"/>
+          <circle cx="42" cy="28" r="5.5" fill="#8b1a1a"/>
+          <circle cx="17" cy="38" r="5.5" fill="#701515"/>
+          <circle cx="32" cy="34" r="5.5" fill="#701515"/>
+          <circle cx="47" cy="38" r="5.5" fill="#701515"/>
+          <circle cx="22" cy="46" r="5.5" fill="#5c1212"/>
+          <circle cx="42" cy="46" r="5.5" fill="#5c1212"/>
+          <circle cx="32" cy="52" r="5.5" fill="#5c1212"/>
+          <circle cx="27" cy="62" r="4" fill="#4a0f0f"/>
+          <circle cx="37" cy="62" r="4" fill="#4a0f0f"/>
+          <circle cx="32" cy="70" r="3.5" fill="#3d0d0d"/>
+          <!-- Reflets -->
+          <circle cx="30" cy="20" r="1.5" fill="white" opacity="0.3"/>
+          <circle cx="20" cy="26" r="1.5" fill="white" opacity="0.3"/>
+          <circle cx="40" cy="26" r="1.5" fill="white" opacity="0.3"/>
+        </svg>
+
+        <div class="separator"></div>
+
+        <div class="logo2-text">
+          <div class="logo2-name" style="font-size:24px;">LE <span>MESSIA</span><br><span style="font-size:20px; letter-spacing:0.08em;">TRIOMPHE</span></div>
+          <div class="logo2-divider"></div>
+          <div class="logo2-tagline">Vins &amp; Spiritueux</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
