@@ -21,17 +21,16 @@
       <span class="head-nom">LE MESSIA TRIOMPHE</span>
       <span class="head-slogan">Vins d'Exception</span>
     </div>
+    <button class="hamburger" onclick="toggleMenu()" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </header>
 
-<button class="hamburger" onclick="toggleMenu()" id="burger">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-
 <nav>
-  <ul>
+  <ul id="nav-menu">
     <li>
       <a href="cave-à-vin.html">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -240,9 +239,9 @@
     </p>
     <p class="footer-copy">© 2025 Le Messia Triomphe. Tous droits réservés.</p>
   </footer>
- <script>
+<script>
   function toggleMenu() {
-    const menu = document.querySelector('nav ul');
+    const menu = document.getElementById('nav-menu');
     menu.classList.toggle('open');
   }
 </script>
