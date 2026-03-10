@@ -1568,3 +1568,59 @@ body {
   .vcard { width: 100%; }
   .head-nom { font-size: 12px; }
 }
+
+
+/* ─── CORRECTIONS DÉBORDEMENT MOBILE ─── */
+@media (max-width: 768px) {
+
+  /* FIX GLOBAL débordement */
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* FIX AVIS */
+  .acard {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  /* FIX PRESENTATION CARDS */
+  .pcard {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* FIX CONTACT */
+  .contact-main {
+    padding: 0 12px 40px 12px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .contact-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-infos,
+  .contact-form-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* FIX TOUTES LES SECTIONS */
+  section, main, div {
+    max-width: 100%;
+  }
+}
