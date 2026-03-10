@@ -26,7 +26,11 @@
    
 
    </div>
-
+   <button class="hamburger" onclick="toggleMenu()" id="burger">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
    <nav>
   <ul>
     <li>
@@ -241,4 +245,12 @@
   </footer>
 
 </body>
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    const burger = document.getElementById('burger');
+    menu.classList.toggle('open');
+  }
+</script>
 </html>
