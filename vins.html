@@ -1,4 +1,59 @@
-<main class="vins-grille">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Vins – Le Messia Triomphe</title>
+  <link rel="stylesheet" href="cave-à-vin.css">
+</head>
+<body class="page-vins">
+
+  <header>
+    <p class="message">Des vins d'exception pour les moments qui comptent.</p>
+    <div class="head">
+      <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+        <path d="M22 10h16v8c0 0 5 4 5 14v24a4 4 0 0 1-4 4H21a4 4 0 0 1-4-4V32c0-10 5-14 5-14V10z" fill="#2a1810" stroke="#c9a96e" stroke-width="1.2"/>
+        <rect x="24" y="5" width="12" height="7" rx="2" fill="#c9a96e" opacity="0.5"/>
+        <path d="M6 28 L7 31 L10 31 L7.5 33 L8.5 36 L6 34 L3.5 36 L4.5 33 L2 31 L5 31 Z" fill="#c9a96e" opacity="0.6"/>
+        <path d="M54 28 L55 31 L58 31 L55.5 33 L56.5 36 L54 34 L51.5 36 L52.5 33 L50 31 L53 31 Z" fill="#c9a96e" opacity="0.6"/>
+      </svg>
+      <div class="head-text">
+        <span class="head-nom">LE MESSIA TRIOMPHE</span>
+        <span class="head-slogan">Vins d'Exception</span>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="cave-à-vin.html">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M3 12L12 3L21 12" stroke="#c9a96e" stroke-width="2" stroke-linecap="round"/>
+            <path d="M5 10V20H10V15H14V20H19V10" stroke="#c9a96e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </li>
+      <li><a href="vins.html">Nos Vins</a></li>
+      <li><a href="commander.html">Commander</a></li>
+      <li><a href="à-propos.html">À Propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="vins-intro">
+    <h2 class="vins-intro-titre">🍷 Notre Sélection</h2>
+    <div class="vins-intro-ligne"></div>
+    <p class="vins-intro-texte">
+      Découvrez notre collection de vins soigneusement sélectionnés pour
+      ravir les amateurs comme les connaisseurs. Chaque bouteille a été
+      choisie avec passion pour sa qualité, son caractère et son élégance.
+      Des vins rouges puissants aux blancs délicats, en passant par nos
+      rosés rafraîchissants — il y en a pour chaque occasion et chaque palais.
+    </p>
+  </div>
+
+  <main class="vins-grille">
 
     <div class="vcard">
       <img src="images.webp" alt="Cuvée Belle-Grove">
@@ -180,4 +235,29 @@
       </div>
     </div>
 
-</main>
+    <div class="vins-special">
+      <span class="vins-special-deco">🍷</span>
+      <h3 class="vins-special-titre">Votre coup de cœur n'est pas là ?</h3>
+      <p class="vins-special-texte">
+        Notre sélection ne s'arrête pas à ce que vous voyez. Si votre âme de
+        connaisseur cherche une bouteille rare, un millésime particulier ou un vin
+        qui vous tient à cœur, nous ferons tout notre possible pour vous le trouver.
+        <a href="contact.html" class="vins-special-lien">Écrivez-nous</a> —
+        chaque demande est pour nous une nouvelle aventure à relever avec passion.
+      </p>
+    </div>
+
+  </main>
+
+  <button id="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">🍷 ↑</button>
+
+  <footer>
+    <hr class="footer-ligne">
+    <p class="footer-texte">
+      🍷 <em>Le Messia Triomphe</em> — Là où chaque bouteille devient un souvenir inoubliable.
+    </p>
+    <p class="footer-copy">© 2025 Le Messia Triomphe. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
