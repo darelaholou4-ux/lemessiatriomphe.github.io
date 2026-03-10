@@ -1434,3 +1434,137 @@ body {
 .apropos-engagement {
   background: rgba(26, 10, 6, 0.88);
 }
+
+/* ─── RESPONSIVE MOBILE ─── */
+
+/* MENU HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #c9a96e;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+  /* BODY */
+  body { overflow-x: hidden; }
+
+  /* HEADER */
+  .message { font-size: 12px; padding: 8px 16px; }
+
+  .head {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+  }
+
+  .head svg { width: 40px; height: 40px; }
+  .head-nom { font-size: 14px; letter-spacing: 1px; }
+  .head-slogan { font-size: 10px; }
+
+  /* NAVBAR MOBILE */
+  .hamburger { display: flex; }
+
+  nav {
+    position: relative;
+    padding: 0;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background: #1a0f0a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-top: 1px solid #c9a96e;
+  }
+
+  nav ul.open { display: flex; }
+
+  nav ul li { border-bottom: 1px solid #3d2415; width: 100%; }
+
+  nav ul li a {
+    display: block;
+    padding: 16px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  /* SECTIONS */
+  #accueil { padding: 30px 16px; }
+  #accueil h2 { font-size: 22px; }
+  .texte-accueil { font-size: 14px; }
+
+  #presentation { padding: 30px 16px; }
+  .presentation-titre { font-size: 20px; }
+  .presentation-cards { flex-direction: column; align-items: center; }
+  .pcard { max-width: 100%; width: 100%; }
+
+  #pourquoi { padding: 30px 16px; }
+  .pourquoi-titre { font-size: 20px; }
+  .pourquoi-cards { flex-direction: column; align-items: center; }
+  .wcard { max-width: 100%; width: 100%; }
+
+  #apropos { padding: 30px 16px; }
+  .apropos-container { flex-direction: column; }
+  .apropos-image { display: none; }
+
+  #avis { padding: 30px 16px; }
+  .avis-titre { font-size: 20px; }
+  .avis-cards { flex-direction: column; align-items: center; }
+  .acard { max-width: 100%; width: 100%; }
+
+  /* VINS */
+  .vins-intro { padding: 30px 16px; }
+  .vins-grille { padding: 16px; gap: 12px; }
+  .vcard { width: 47%; }
+
+  /* COMMANDER */
+  .cmd-main { padding: 0 12px 40px 12px; }
+  .cmd-titre { font-size: 22px; }
+  .cmd-grid { flex-direction: column; }
+  .cmd-field { min-width: 100%; }
+  .cmd-section { padding: 20px 16px; }
+
+  /* CONTACT */
+  .contact-main { padding: 0 12px 40px 12px; }
+  .contact-container { flex-direction: column; }
+  .contact-infos,
+  .contact-form-wrapper { min-width: 100%; width: 100%; }
+  .contact-form-grid { flex-direction: column; }
+  .contact-field { min-width: 100%; }
+  .contact-bonus { flex-direction: column; align-items: center; }
+  .bonus-card { max-width: 100%; width: 100%; }
+
+  /* À PROPOS PAGE */
+  .apropos-main { padding: 0 12px 40px 12px; }
+  .apropos-section { flex-direction: column; }
+  .valeurs-grid { flex-direction: column; align-items: center; }
+  .valeur-card { max-width: 100%; width: 100%; }
+  .apropos-selection-cards { flex-direction: column; align-items: center; }
+  .sel-card { max-width: 100%; width: 100%; }
+
+  /* VINS SPECIAL */
+  .vins-special { margin: 10px 12px 30px 12px; padding: 24px 16px; }
+}
+
+@media (max-width: 400px) {
+  .vcard { width: 100%; }
+  .head-nom { font-size: 12px; }
+}
