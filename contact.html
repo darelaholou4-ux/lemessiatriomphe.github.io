@@ -27,7 +27,11 @@
    
 
    </div>
-
+<button class="hamburger" onclick="toggleMenu()" id="burger">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
    <nav>
   <ul>
     <li>
@@ -176,6 +180,12 @@
     </p>
     <p class="footer-copy">© 2025 Le Messia Triomphe. Tous droits réservés.</p>
   </footer>
-
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    const burger = document.getElementById('burger');
+    menu.classList.toggle('open');
+  }
+</script>
 </body>
 </html>
